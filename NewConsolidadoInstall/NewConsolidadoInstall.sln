@@ -1,0 +1,23 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 10.00
+# Visual Studio 2008
+Project("{54435603-DBB4-11D2-8724-00A0C9A8B90C}") = "NewConsolidadoInstall", "NewConsolidadoInstall.vdproj", "{970B9265-96F7-473A-B375-F0C63B5CCDB6}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		NewConsolidadoProduccion|Any CPU = NewConsolidadoProduccion|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{970B9265-96F7-473A-B375-F0C63B5CCDB6}.Debug|Any CPU.ActiveCfg = Debug
+		{970B9265-96F7-473A-B375-F0C63B5CCDB6}.Debug|Any CPU.Build.0 = Debug
+		{970B9265-96F7-473A-B375-F0C63B5CCDB6}.NewConsolidadoProduccion|Any CPU.ActiveCfg = Release
+		{970B9265-96F7-473A-B375-F0C63B5CCDB6}.NewConsolidadoProduccion|Any CPU.Build.0 = Release
+		{970B9265-96F7-473A-B375-F0C63B5CCDB6}.Release|Any CPU.ActiveCfg = Release
+		{970B9265-96F7-473A-B375-F0C63B5CCDB6}.Release|Any CPU.Build.0 = Release
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+EndGlobal

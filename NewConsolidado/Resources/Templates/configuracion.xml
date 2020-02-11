@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<icafal>
+	<configuracion>
+		<connsource>clsticas038</connsource>
+		<conncatalog>CONSOLIDADO_EERR_PRODUCCION</conncatalog>
+		<connuser>pconet</connuser>
+		<connpassword>cGNvMjAxMDA0bmV0</connpassword>
+	</configuracion>
+	<log4net>
+		<nivel>0</nivel>
+		<destino>0</destino>
+	</log4net>
+</icafal>

@@ -1,0 +1,39 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<xs:schema id="dtsEstadoSituacion" targetNamespace="http://tempuri.org/dtsEstadoSituacion.xsd" xmlns:mstns="http://tempuri.org/dtsEstadoSituacion.xsd" xmlns="http://tempuri.org/dtsEstadoSituacion.xsd" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata" xmlns:msprop="urn:schemas-microsoft-com:xml-msprop" attributeFormDefault="qualified" elementFormDefault="qualified">
+  <xs:annotation>
+    <xs:appinfo source="urn:schemas-microsoft-com:xml-msdatasource">
+      <DataSource DefaultConnectionIndex="0" FunctionsComponentName="QueriesTableAdapter" Modifier="AutoLayout, AnsiClass, Class, Public" SchemaSerializationMode="IncludeSchema" xmlns="urn:schemas-microsoft-com:xml-msdatasource">
+        <Connections />
+        <Tables />
+        <Sources />
+      </DataSource>
+    </xs:appinfo>
+  </xs:annotation>
+  <xs:element name="dtsEstadoSituacion" msdata:IsDataSet="true" msdata:UseCurrentLocale="true" msprop:Generator_UserDSName="dtsEstadoSituacion" msprop:Generator_DataSetName="dtsEstadoSituacion" msprop:EnableTableAdapterManager="true">
+    <xs:complexType>
+      <xs:choice minOccurs="0" maxOccurs="unbounded">
+        <xs:element name="tblEstadoSituacion" msprop:Generator_UserTableName="tblEstadoSituacion" msprop:Generator_RowDeletedName="tblEstadoSituacionRowDeleted" msprop:Generator_RowChangedName="tblEstadoSituacionRowChanged" msprop:Generator_RowClassName="tblEstadoSituacionRow" msprop:Generator_RowChangingName="tblEstadoSituacionRowChanging" msprop:Generator_RowEvArgName="tblEstadoSituacionRowChangeEvent" msprop:Generator_RowEvHandlerName="tblEstadoSituacionRowChangeEventHandler" msprop:Generator_TableClassName="tblEstadoSituacionDataTable" msprop:Generator_TableVarName="tabletblEstadoSituacion" msprop:Generator_RowDeletingName="tblEstadoSituacionRowDeleting" msprop:Generator_TablePropName="tblEstadoSituacion">
+          <xs:complexType>
+            <xs:sequence>
+              <xs:element name="idConsolidado" msprop:Generator_UserColumnName="idConsolidado" msprop:Generator_ColumnVarNameInTable="columnidConsolidado" msprop:Generator_ColumnPropNameInRow="idConsolidado" msprop:Generator_ColumnPropNameInTable="idConsolidadoColumn" type="xs:int" minOccurs="0" />
+              <xs:element name="DescripcionConsolidado" msprop:Generator_UserColumnName="DescripcionConsolidado" msprop:Generator_ColumnVarNameInTable="columnDescripcionConsolidado" msprop:Generator_ColumnPropNameInRow="DescripcionConsolidado" msprop:Generator_ColumnPropNameInTable="DescripcionConsolidadoColumn" type="xs:string" minOccurs="0" />
+              <xs:element name="idCompania" msprop:Generator_UserColumnName="idCompania" msprop:Generator_ColumnVarNameInTable="columnidCompania" msprop:Generator_ColumnPropNameInRow="idCompania" msprop:Generator_ColumnPropNameInTable="idCompaniaColumn" type="xs:string" minOccurs="0" />
+              <xs:element name="DescripcionCompania" msprop:Generator_UserColumnName="DescripcionCompania" msprop:Generator_ColumnVarNameInTable="columnDescripcionCompania" msprop:Generator_ColumnPropNameInRow="DescripcionCompania" msprop:Generator_ColumnPropNameInTable="DescripcionCompaniaColumn" type="xs:string" minOccurs="0" />
+              <xs:element name="idGrupo" msprop:Generator_UserColumnName="idGrupo" msprop:Generator_ColumnVarNameInTable="columnidGrupo" msprop:Generator_ColumnPropNameInRow="idGrupo" msprop:Generator_ColumnPropNameInTable="idGrupoColumn" type="xs:string" minOccurs="0" />
+              <xs:element name="DescripcionGrupo" msprop:Generator_UserColumnName="DescripcionGrupo" msprop:Generator_ColumnVarNameInTable="columnDescripcionGrupo" msprop:Generator_ColumnPropNameInRow="DescripcionGrupo" msprop:Generator_ColumnPropNameInTable="DescripcionGrupoColumn" type="xs:string" minOccurs="0" />
+              <xs:element name="idConcepto" msprop:Generator_UserColumnName="idConcepto" msprop:Generator_ColumnVarNameInTable="columnidConcepto" msprop:Generator_ColumnPropNameInRow="idConcepto" msprop:Generator_ColumnPropNameInTable="idConceptoColumn" type="xs:string" minOccurs="0" />
+              <xs:element name="DescripcionConcepto" msprop:Generator_UserColumnName="DescripcionConcepto" msprop:Generator_ColumnVarNameInTable="columnDescripcionConcepto" msprop:Generator_ColumnPropNameInRow="DescripcionConcepto" msprop:Generator_ColumnPropNameInTable="DescripcionConceptoColumn" type="xs:string" minOccurs="0" />
+              <xs:element name="idCuenta" msprop:Generator_UserColumnName="idCuenta" msprop:Generator_ColumnVarNameInTable="columnidCuenta" msprop:Generator_ColumnPropNameInRow="idCuenta" msprop:Generator_ColumnPropNameInTable="idCuentaColumn" type="xs:string" minOccurs="0" />
+              <xs:element name="DescripcionCuenta" msprop:Generator_UserColumnName="DescripcionCuenta" msprop:Generator_ColumnVarNameInTable="columnDescripcionCuenta" msprop:Generator_ColumnPropNameInRow="DescripcionCuenta" msprop:Generator_ColumnPropNameInTable="DescripcionCuentaColumn" type="xs:string" minOccurs="0" />
+              <xs:element name="idPeriodo" msprop:Generator_UserColumnName="idPeriodo" msprop:Generator_ColumnVarNameInTable="columnidPeriodo" msprop:Generator_ColumnPropNameInRow="idPeriodo" msprop:Generator_ColumnPropNameInTable="idPeriodoColumn" type="xs:string" minOccurs="0" />
+              <xs:element name="Valor" msprop:Generator_UserColumnName="Valor" msprop:Generator_ColumnVarNameInTable="columnValor" msprop:Generator_ColumnPropNameInRow="Valor" msprop:Generator_ColumnPropNameInTable="ValorColumn" type="xs:decimal" minOccurs="0" />
+              <xs:element name="FlagImprime" msprop:Generator_UserColumnName="FlagImprime" msprop:Generator_ColumnVarNameInTable="columnFlagImprime" msprop:Generator_ColumnPropNameInRow="FlagImprime" msprop:Generator_ColumnPropNameInTable="FlagImprimeColumn" type="xs:int" minOccurs="0" />
+              <xs:element name="FlagPatrimonio" msprop:Generator_UserColumnName="FlagPatrimonio" msprop:Generator_ColumnVarNameInTable="columnFlagPatrimonio" msprop:Generator_ColumnPropNameInRow="FlagPatrimonio" msprop:Generator_ColumnPropNameInTable="FlagPatrimonioColumn" type="xs:string" minOccurs="0" />
+              <xs:element name="DescripcionFlag" msprop:Generator_UserColumnName="DescripcionFlag" msprop:Generator_ColumnVarNameInTable="columnDescripcionFlag" msprop:Generator_ColumnPropNameInRow="DescripcionFlag" msprop:Generator_ColumnPropNameInTable="DescripcionFlagColumn" type="xs:string" minOccurs="0" />
+            </xs:sequence>
+          </xs:complexType>
+        </xs:element>
+      </xs:choice>
+    </xs:complexType>
+  </xs:element>
+</xs:schema>

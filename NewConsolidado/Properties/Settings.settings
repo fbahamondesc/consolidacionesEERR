@@ -1,0 +1,105 @@
+﻿<?xml version='1.0' encoding='utf-8'?>
+<SettingsFile xmlns="http://schemas.microsoft.com/VisualStudio/2004/01/settings" CurrentProfile="(Default)" GeneratedClassNamespace="NewConsolidado.Properties" GeneratedClassName="Settings">
+  <Profiles />
+  <Settings>
+    <Setting Name="usrAppWindowEstado" Type="System.Windows.Forms.FormWindowState" Scope="User">
+      <Value Profile="(Default)">Normal</Value>
+    </Setting>
+    <Setting Name="usrAppAncho" Type="System.Int32" Scope="User">
+      <Value Profile="(Default)">800</Value>
+    </Setting>
+    <Setting Name="usrAppAlto" Type="System.Int32" Scope="User">
+      <Value Profile="(Default)">600</Value>
+    </Setting>
+    <Setting Name="usrAppIzquierda" Type="System.Int32" Scope="User">
+      <Value Profile="(Default)">1</Value>
+    </Setting>
+    <Setting Name="usrAppTop" Type="System.Int32" Scope="User">
+      <Value Profile="(Default)">1</Value>
+    </Setting>
+    <Setting Name="myLog4NetDestino" Type="System.Int32" Scope="User">
+      <Value Profile="(Default)">0</Value>
+    </Setting>
+    <Setting Name="usrRutaArchivos" Type="System.String" Scope="User">
+      <Value Profile="(Default)" />
+    </Setting>
+    <Setting Name="usrMuestraToolbar" Type="System.Windows.Forms.ToolStripItemDisplayStyle" Scope="User">
+      <Value Profile="(Default)">ImageAndText</Value>
+    </Setting>
+    <Setting Name="usrDiseñoToolbar" Type="System.Int32" Scope="User">
+      <Value Profile="(Default)">3</Value>
+    </Setting>
+    <Setting Name="myLog4NetNivel" Type="System.Int32" Scope="User">
+      <Value Profile="(Default)">0</Value>
+    </Setting>
+    <Setting Name="usrUsuarioWindows" Type="System.String" Scope="User">
+      <Value Profile="(Default)" />
+    </Setting>
+    <Setting Name="usrDiseñoBotones" Type="System.Int32" Scope="User">
+      <Value Profile="(Default)">3</Value>
+    </Setting>
+    <Setting Name="usrMuestraCamposOcultos" Type="System.Boolean" Scope="User">
+      <Value Profile="(Default)">False</Value>
+    </Setting>
+    <Setting Name="usrMuestraColumnasOcultas" Type="System.Boolean" Scope="User">
+      <Value Profile="(Default)">False</Value>
+    </Setting>
+    <Setting Name="usrPreguntarAlSalir" Type="System.Boolean" Scope="User">
+      <Value Profile="(Default)">False</Value>
+    </Setting>
+    <Setting Name="usrLibrosReporte" Type="System.String" Scope="User">
+      <Value Profile="(Default)">REAL,NOLOB,IFRS</Value>
+    </Setting>
+    <Setting Name="usrPreguntaEliminar" Type="System.Boolean" Scope="User">
+      <Value Profile="(Default)">True</Value>
+    </Setting>
+    <Setting Name="usrPreguntaFormulariosSalir" Type="System.Boolean" Scope="User">
+      <Value Profile="(Default)">True</Value>
+    </Setting>
+    <Setting Name="frmMantenedorConsolidado" Type="System.Drawing.Point" Scope="User">
+      <Value Profile="(Default)">5, 5</Value>
+    </Setting>
+    <Setting Name="frmMantenedorConsolidadoEstado" Type="System.Windows.Forms.FormWindowState" Scope="User">
+      <Value Profile="(Default)">Normal</Value>
+    </Setting>
+    <Setting Name="usrRecorarPosicionFormularios" Type="System.Boolean" Scope="User">
+      <Value Profile="(Default)">True</Value>
+    </Setting>
+    <Setting Name="frmIngresoAjustesManuales" Type="System.Drawing.Point" Scope="User">
+      <Value Profile="(Default)">5, 5</Value>
+    </Setting>
+    <Setting Name="frmIngresoAjustesManualesEstado" Type="System.Windows.Forms.FormWindowState" Scope="User">
+      <Value Profile="(Default)">Normal</Value>
+    </Setting>
+    <Setting Name="frmMantenedorConsolidadoAlto" Type="System.Int32" Scope="User">
+      <Value Profile="(Default)">523</Value>
+    </Setting>
+    <Setting Name="frmMantenedorConsolidadoAncho" Type="System.Int32" Scope="User">
+      <Value Profile="(Default)">782</Value>
+    </Setting>
+    <Setting Name="usrUsuarioTipo" Type="System.Int32" Scope="User">
+      <Value Profile="(Default)">0</Value>
+    </Setting>
+    <Setting Name="usrRutaArchivosLog" Type="System.String" Scope="User">
+      <Value Profile="(Default)" />
+    </Setting>
+    <Setting Name="usrRutaArchivosPaso" Type="System.String" Scope="User">
+      <Value Profile="(Default)" />
+    </Setting>
+    <Setting Name="strConnSource" Type="System.String" Scope="User">
+      <Value Profile="(Default)" />
+    </Setting>
+    <Setting Name="strConnCatalog" Type="System.String" Scope="User">
+      <Value Profile="(Default)" />
+    </Setting>
+    <Setting Name="strConnUser" Type="System.String" Scope="User">
+      <Value Profile="(Default)" />
+    </Setting>
+    <Setting Name="strConnPassword" Type="System.String" Scope="User">
+      <Value Profile="(Default)" />
+    </Setting>
+    <Setting Name="appTituloAplicacion" Type="System.String" Scope="User">
+      <Value Profile="(Default)">Consolidación de Empresas Relacionadas</Value>
+    </Setting>
+  </Settings>
+</SettingsFile>

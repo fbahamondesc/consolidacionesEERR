@@ -1,0 +1,23 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 10.00
+# Visual Studio 2008
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "NewConsolidado", "NewConsolidado.csproj", "{EA2FBE48-A87F-4C13-9C8A-79B68B9D28CB}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		NewConsolidadoProduccion|Any CPU = NewConsolidadoProduccion|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{EA2FBE48-A87F-4C13-9C8A-79B68B9D28CB}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{EA2FBE48-A87F-4C13-9C8A-79B68B9D28CB}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{EA2FBE48-A87F-4C13-9C8A-79B68B9D28CB}.NewConsolidadoProduccion|Any CPU.ActiveCfg = NewConsolidadoProduccion|Any CPU
+		{EA2FBE48-A87F-4C13-9C8A-79B68B9D28CB}.NewConsolidadoProduccion|Any CPU.Build.0 = NewConsolidadoProduccion|Any CPU
+		{EA2FBE48-A87F-4C13-9C8A-79B68B9D28CB}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{EA2FBE48-A87F-4C13-9C8A-79B68B9D28CB}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+EndGlobal

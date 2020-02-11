@@ -1,0 +1,732 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="3.5" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProductVersion>9.0.30729</ProductVersion>
+    <SchemaVersion>2.0</SchemaVersion>
+    <ProjectGuid>{EA2FBE48-A87F-4C13-9C8A-79B68B9D28CB}</ProjectGuid>
+    <OutputType>WinExe</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>NewConsolidado</RootNamespace>
+    <AssemblyName>NewConsolidado</AssemblyName>
+    <TargetFrameworkVersion>v3.5</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+    <ApplicationIcon>rsc-32_Consolidado.ico</ApplicationIcon>
+    <IsWebBootstrapper>false</IsWebBootstrapper>
+    <StartupObject>NewConsolidado.Program</StartupObject>
+    <PublishUrl>publish\</PublishUrl>
+    <Install>true</Install>
+    <InstallFrom>Disk</InstallFrom>
+    <UpdateEnabled>false</UpdateEnabled>
+    <UpdateMode>Foreground</UpdateMode>
+    <UpdateInterval>7</UpdateInterval>
+    <UpdateIntervalUnits>Days</UpdateIntervalUnits>
+    <UpdatePeriodically>false</UpdatePeriodically>
+    <UpdateRequired>false</UpdateRequired>
+    <MapFileExtensions>true</MapFileExtensions>
+    <ApplicationRevision>0</ApplicationRevision>
+    <ApplicationVersion>1.0.0.%2a</ApplicationVersion>
+    <UseApplicationTrust>false</UseApplicationTrust>
+    <BootstrapperEnabled>true</BootstrapperEnabled>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>0</WarningLevel>
+    <UseVSHostingProcess>true</UseVSHostingProcess>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'NewConsolidadoProduccion|AnyCPU' ">
+    <OutputPath>bin\NewConsolidadoProduccion\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <Optimize>true</Optimize>
+    <DebugType>pdbonly</DebugType>
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <ErrorReport>prompt</ErrorReport>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="CrystalDecisions.CrystalReports.Engine, Version=10.5.3700.0, Culture=neutral, PublicKeyToken=692fbea5521e1304, processorArchitecture=MSIL" />
+    <Reference Include="CrystalDecisions.Data.AdoDotNetInterop, Version=10.5.3700.0, Culture=neutral, PublicKeyToken=692fbea5521e1304, processorArchitecture=MSIL" />
+    <Reference Include="CrystalDecisions.Enterprise.Framework, Version=10.5.3700.0, Culture=neutral, PublicKeyToken=692fbea5521e1304" />
+    <Reference Include="CrystalDecisions.Enterprise.InfoStore, Version=10.5.3700.0, Culture=neutral, PublicKeyToken=692fbea5521e1304" />
+    <Reference Include="CrystalDecisions.ReportSource, Version=10.5.3700.0, Culture=neutral, PublicKeyToken=692fbea5521e1304, processorArchitecture=MSIL" />
+    <Reference Include="CrystalDecisions.Shared, Version=10.5.3700.0, Culture=neutral, PublicKeyToken=692fbea5521e1304, processorArchitecture=MSIL" />
+    <Reference Include="CrystalDecisions.VSDesigner, Version=10.5.3700.0, Culture=neutral, PublicKeyToken=692fbea5521e1304, processorArchitecture=MSIL" />
+    <Reference Include="CrystalDecisions.Web, Version=10.5.3700.0, Culture=neutral, PublicKeyToken=692fbea5521e1304, processorArchitecture=MSIL" />
+    <Reference Include="CrystalDecisions.Windows.Forms, Version=10.5.3700.0, Culture=neutral, PublicKeyToken=692fbea5521e1304, processorArchitecture=MSIL" />
+    <Reference Include="Microsoft.Office.Interop.Excel, Version=12.0.0.0, Culture=neutral, PublicKeyToken=71e9bce111e9429c">
+      <SpecificVersion>False</SpecificVersion>
+    </Reference>
+    <Reference Include="System" />
+    <Reference Include="System.configuration" />
+    <Reference Include="System.Core">
+      <RequiredTargetFramework>3.5</RequiredTargetFramework>
+    </Reference>
+    <Reference Include="System.Design" />
+    <Reference Include="System.Web" />
+    <Reference Include="System.Web.Services, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\..\..\..\..\..\Windows\assembly\GAC_MSIL\System.Web.Services\2.0.0.0__b03f5f7f11d50a3a\System.Web.Services.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Xml.Linq">
+      <RequiredTargetFramework>3.5</RequiredTargetFramework>
+    </Reference>
+    <Reference Include="System.Data.DataSetExtensions">
+      <RequiredTargetFramework>3.5</RequiredTargetFramework>
+    </Reference>
+    <Reference Include="System.Data" />
+    <Reference Include="System.Deployment" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="System.Xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="Controladores\Clases\base64.cs" />
+    <Compile Include="Controladores\ControladorNegocio\BOAjustes.cs" />
+    <Compile Include="Controladores\ControladorNegocio\BOAsociacionGrupo.cs" />
+    <Compile Include="Controladores\ControladorNegocio\BOCompanias.cs" />
+    <Compile Include="Controladores\ControladorNegocio\BOConceptos.cs" />
+    <Compile Include="Controladores\ControladorNegocio\BOConcurrencias.cs" />
+    <Compile Include="Controladores\ControladorNegocio\BOConfiguracionAjustesAutomaticos.cs" />
+    <Compile Include="Controladores\ControladorNegocio\BOConfiguracionComparativos.cs" />
+    <Compile Include="Controladores\ControladorNegocio\BOConfiguraciones.cs" />
+    <Compile Include="Controladores\ControladorNegocio\BOConsolidados.cs" />
+    <Compile Include="Controladores\ControladorNegocio\BOConsolidadosAsociacionGrupo.cs" />
+    <Compile Include="Controladores\ControladorNegocio\BOEjecutar.cs" />
+    <Compile Include="Controladores\ControladorNegocio\BOGrupos.cs" />
+    <Compile Include="Controladores\ControladorNegocio\BOMaestroCuentas.cs" />
+    <Compile Include="Controladores\ControladorNegocio\BOMaestroLibros.cs" />
+    <Compile Include="Controladores\ControladorNegocio\BOReportes.cs" />
+    <Compile Include="Controladores\ControladorNegocio\BOSaldosContables.cs" />
+    <Compile Include="Controladores\ControladorNegocio\BOSincronizacionODBC.cs" />
+    <Compile Include="Controladores\ControladorNegocio\BOVersiones.cs" />
+    <Compile Include="Modelos\AccesoDatos\Conexion.cs" />
+    <Compile Include="Modelos\AccesoDatos\DAOAjustes.cs" />
+    <Compile Include="Modelos\AccesoDatos\DAOAsociacionGrupo.cs" />
+    <Compile Include="Modelos\AccesoDatos\DAOCompanias.cs" />
+    <Compile Include="Modelos\AccesoDatos\DAOConceptos.cs" />
+    <Compile Include="Modelos\AccesoDatos\DAOConcurrencias.cs" />
+    <Compile Include="Modelos\AccesoDatos\DAOConfiguracionAjustesAutomaticos.cs" />
+    <Compile Include="Modelos\AccesoDatos\DAOConfiguracionComparativos.cs" />
+    <Compile Include="Modelos\AccesoDatos\DAOConfiguraciones.cs" />
+    <Compile Include="Modelos\AccesoDatos\DAOConsolidados.cs" />
+    <Compile Include="Controladores\Clases\CFG.cs" />
+    <Compile Include="Controladores\Clases\MisFunciones.cs" />
+    <Compile Include="Controladores\Clases\MyLog4Net.cs" />
+    <Compile Include="Controladores\Clases\MySettings4Net.cs" />
+    <Compile Include="Modelos\AccesoDatos\DAOConsolidadosAsociacionGrupo.cs" />
+    <Compile Include="Modelos\AccesoDatos\DAOEjecutar.cs" />
+    <Compile Include="Modelos\AccesoDatos\DAOGrupos.cs" />
+    <Compile Include="Modelos\AccesoDatos\DAOMaestroCuentas.cs" />
+    <Compile Include="Modelos\AccesoDatos\DAOMaestroLibros.cs" />
+    <Compile Include="Modelos\AccesoDatos\DAOReportes.cs" />
+    <Compile Include="Modelos\AccesoDatos\DAOSaldosContables.cs" />
+    <Compile Include="Modelos\AccesoDatos\DAOSincronizarODBC.cs" />
+    <Compile Include="Modelos\AccesoDatos\DAOVersiones.cs" />
+    <Compile Include="Modelos\TransporteDatos\DTOAjustes.cs" />
+    <Compile Include="Modelos\TransporteDatos\DTOAsociacionGrupos.cs" />
+    <Compile Include="Modelos\TransporteDatos\DTOCompanias.cs" />
+    <Compile Include="Modelos\TransporteDatos\DTOConcurrencias.cs" />
+    <Compile Include="Modelos\TransporteDatos\DTOConfiguracionAjustesAutomaticos.cs" />
+    <Compile Include="Modelos\TransporteDatos\DTOConfiguracionComparativos.cs" />
+    <Compile Include="Modelos\TransporteDatos\DTOConfiguraciones.cs" />
+    <Compile Include="Modelos\TransporteDatos\DTOConsolidados.cs" />
+    <Compile Include="Modelos\TransporteDatos\DTOConsolidadosAsociacionGrupo.cs" />
+    <Compile Include="Modelos\TransporteDatos\DTOGrupos.cs" />
+    <Compile Include="Modelos\TransporteDatos\DTOMaestroCuentas.cs" />
+    <Compile Include="Modelos\TransporteDatos\DTOConceptos.cs" />
+    <Compile Include="Modelos\TransporteDatos\DTOMaestroLibros.cs" />
+    <Compile Include="Modelos\TransporteDatos\DTOReporteERF.cs" />
+    <Compile Include="Modelos\TransporteDatos\DTOReporteESF.cs" />
+    <Compile Include="Modelos\TransporteDatos\DTOSaldosContables.cs" />
+    <Compile Include="Modelos\TransporteDatos\DTOVersiones.cs" />
+    <Compile Include="Vistas\Formularios\ActualizarCodigo.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Vistas\Formularios\ActualizarCodigo.Designer.cs">
+      <DependentUpon>ActualizarCodigo.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Vistas\Formularios\CambiaRoot.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Vistas\Formularios\CambiaRoot.Designer.cs">
+      <DependentUpon>CambiaRoot.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Vistas\Formularios\IngresoSaldosContables_Importacion.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Vistas\Formularios\IngresoSaldosContables_Importacion.Designer.cs">
+      <DependentUpon>IngresoSaldosContables_Importacion.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Vistas\Formularios\MantenedorAsociacionGruposConceptosCuentas_CopiarPlantilla.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Vistas\Formularios\MantenedorAsociacionGruposConceptosCuentas_CopiarPlantilla.Designer.cs">
+      <DependentUpon>MantenedorAsociacionGruposConceptosCuentas_CopiarPlantilla.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Vistas\Formularios\MantenedorConfiguracionAjustesAutomaticos.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Vistas\Formularios\MantenedorConfiguracionAjustesAutomaticos.Designer.cs">
+      <DependentUpon>MantenedorConfiguracionAjustesAutomaticos.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Vistas\Formularios\MantenedorConsolidados_AsociacionGrupos.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Vistas\Formularios\MantenedorConsolidados_AsociacionGrupos.Designer.cs">
+      <DependentUpon>MantenedorConsolidados_AsociacionGrupos.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Vistas\Formularios\MantenedorConsolidados_Carpeta.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Vistas\Formularios\MantenedorConsolidados_Carpeta.Designer.cs">
+      <DependentUpon>MantenedorConsolidados_Carpeta.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Vistas\Formularios\MantenedorConsolidados_ConfiguracionImprimir.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Vistas\Formularios\MantenedorConsolidados_ConfiguracionImprimir.Designer.cs">
+      <DependentUpon>MantenedorConsolidados_ConfiguracionImprimir.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Vistas\Formularios\MantenedorConsolidados_Consolidados.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Vistas\Formularios\MantenedorConsolidados_Consolidados.Designer.cs">
+      <DependentUpon>MantenedorConsolidados_Consolidados.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Vistas\Formularios\MantenedorConsolidados_ConsultaArbolConsolidados.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Vistas\Formularios\MantenedorConsolidados_ConsultaArbolConsolidados.Designer.cs">
+      <DependentUpon>MantenedorConsolidados_ConsultaArbolConsolidados.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Vistas\Formularios\MantenedorConsolidados_ConsultaComparativos.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Vistas\Formularios\MantenedorConsolidados_ConsultaComparativos.Designer.cs">
+      <DependentUpon>MantenedorConsolidados_ConsultaComparativos.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Vistas\Formularios\MantenedorConsolidados_ConsultaConfiguraciones.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Vistas\Formularios\MantenedorConsolidados_ConsultaConfiguraciones.Designer.cs">
+      <DependentUpon>MantenedorConsolidados_ConsultaConfiguraciones.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Vistas\Formularios\MantenedorConsolidados_ConsultaReferencias.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Vistas\Formularios\MantenedorConsolidados_ConsultaReferencias.Designer.cs">
+      <DependentUpon>MantenedorConsolidados_ConsultaReferencias.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Vistas\Formularios\MantenedorConsolidados_Empresas.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Vistas\Formularios\MantenedorConsolidados_Empresas.Designer.cs">
+      <DependentUpon>MantenedorConsolidados_Empresas.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Vistas\Reportes\ERFSuperintendencia\dtsEstadoResultadoSuper.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>dtsEstadoResultadoSuper.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="Vistas\Reportes\ERFSuperintendencia\EstadoResultadoSuper.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Vistas\Reportes\ERFSuperintendencia\EstadoResultadoSuper.Designer.cs">
+      <DependentUpon>EstadoResultadoSuper.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Vistas\Reportes\ERFSuperintendencia\rptEstadoResultadoSuper.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>rptEstadoResultadoSuper.rpt</DependentUpon>
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Vistas\Reportes\ERF\rptEstadoResultado.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>rptEstadoResultado.rpt</DependentUpon>
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Vistas\Formularios\ConfiguracionApp.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Vistas\Formularios\ConfiguracionApp.Designer.cs">
+      <DependentUpon>ConfiguracionApp.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Vistas\Formularios\ConsultaCompanias.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Vistas\Formularios\ConsultaCompanias.Designer.cs">
+      <DependentUpon>ConsultaCompanias.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Vistas\Formularios\ConsultaCuentasContables.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Vistas\Formularios\ConsultaCuentasContables.Designer.cs">
+      <DependentUpon>ConsultaCuentasContables.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Vistas\Formularios\IngresoAjustesManuales.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Vistas\Formularios\IngresoAjustesManuales.Designer.cs">
+      <DependentUpon>IngresoAjustesManuales.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Vistas\Formularios\IngresoAjustesManualesResumenImportacion.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Vistas\Formularios\IngresoAjustesManualesResumenImportacion.Designer.cs">
+      <DependentUpon>IngresoAjustesManualesResumenImportacion.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Vistas\Formularios\IngresoSaldosContables.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Vistas\Formularios\IngresoSaldosContables.Designer.cs">
+      <DependentUpon>IngresoSaldosContables.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Vistas\Formularios\MantenedorAsociacionGruposConceptosCuentas.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Vistas\Formularios\MantenedorAsociacionGruposConceptosCuentas.Designer.cs">
+      <DependentUpon>MantenedorAsociacionGruposConceptosCuentas.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Vistas\Formularios\MantenedorCompanias.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Vistas\Formularios\MantenedorCompanias.Designer.cs">
+      <DependentUpon>MantenedorCompanias.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Vistas\Formularios\MantenedorConceptos.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Vistas\Formularios\MantenedorConceptos.Designer.cs">
+      <DependentUpon>MantenedorConceptos.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Vistas\Formularios\MantenedorConsolidados.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Vistas\Formularios\MantenedorConsolidados.Designer.cs">
+      <DependentUpon>MantenedorConsolidados.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Vistas\Formularios\MantenedorGrupos.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Vistas\Formularios\MantenedorGrupos.Designer.cs">
+      <DependentUpon>MantenedorGrupos.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Vistas\Formularios\MantenedorMaestroCuentasContables.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Vistas\Formularios\MantenedorMaestroCuentasContables.Designer.cs">
+      <DependentUpon>MantenedorMaestroCuentasContables.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Vistas\Formularios\AcercaDe.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Vistas\Formularios\AcercaDe.Designer.cs">
+      <DependentUpon>AcercaDe.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Vistas\Formularios\MDI.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Vistas\Formularios\MDI.Designer.cs">
+      <DependentUpon>MDI.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Vistas\Formularios\MenuReportes.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Vistas\Formularios\MenuReportes.Designer.cs">
+      <DependentUpon>MenuReportes.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Program.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <EmbeddedResource Include="Vistas\Formularios\ActualizarCodigo.resx">
+      <DependentUpon>ActualizarCodigo.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Vistas\Formularios\CambiaRoot.resx">
+      <DependentUpon>CambiaRoot.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Vistas\Formularios\IngresoSaldosContables_Importacion.resx">
+      <DependentUpon>IngresoSaldosContables_Importacion.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Vistas\Formularios\MantenedorAsociacionGruposConceptosCuentas_CopiarPlantilla.resx">
+      <DependentUpon>MantenedorAsociacionGruposConceptosCuentas_CopiarPlantilla.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Vistas\Formularios\MantenedorConfiguracionAjustesAutomaticos.resx">
+      <DependentUpon>MantenedorConfiguracionAjustesAutomaticos.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Vistas\Formularios\MantenedorConsolidados_AsociacionGrupos.resx">
+      <DependentUpon>MantenedorConsolidados_AsociacionGrupos.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Vistas\Formularios\MantenedorConsolidados_Carpeta.resx">
+      <DependentUpon>MantenedorConsolidados_Carpeta.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Vistas\Formularios\MantenedorConsolidados_ConfiguracionImprimir.resx">
+      <DependentUpon>MantenedorConsolidados_ConfiguracionImprimir.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Vistas\Formularios\MantenedorConsolidados_Consolidados.resx">
+      <DependentUpon>MantenedorConsolidados_Consolidados.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Vistas\Formularios\MantenedorConsolidados_ConsultaArbolConsolidados.resx">
+      <DependentUpon>MantenedorConsolidados_ConsultaArbolConsolidados.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Vistas\Formularios\MantenedorConsolidados_ConsultaComparativos.resx">
+      <DependentUpon>MantenedorConsolidados_ConsultaComparativos.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Vistas\Formularios\MantenedorConsolidados_ConsultaConfiguraciones.resx">
+      <DependentUpon>MantenedorConsolidados_ConsultaConfiguraciones.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Vistas\Formularios\MantenedorConsolidados_ConsultaReferencias.resx">
+      <DependentUpon>MantenedorConsolidados_ConsultaReferencias.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Vistas\Formularios\MantenedorConsolidados_Empresas.resx">
+      <DependentUpon>MantenedorConsolidados_Empresas.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Vistas\Reportes\ERFSuperintendencia\EstadoResultadoSuper.resx">
+      <DependentUpon>EstadoResultadoSuper.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Vistas\Reportes\ERFSuperintendencia\rptEstadoResultadoSuper.rpt">
+      <Generator>CrystalDecisions.VSDesigner.CodeGen.ReportCodeGenerator</Generator>
+      <LastGenOutput>rptEstadoResultadoSuper.cs</LastGenOutput>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Vistas\Reportes\ERF\rptEstadoResultado.rpt">
+      <Generator>CrystalDecisions.VSDesigner.CodeGen.ReportCodeGenerator</Generator>
+      <LastGenOutput>rptEstadoResultado.cs</LastGenOutput>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Vistas\Formularios\ConfiguracionApp.resx">
+      <DependentUpon>ConfiguracionApp.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Vistas\Formularios\ConsultaCompanias.resx">
+      <DependentUpon>ConsultaCompanias.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Vistas\Formularios\ConsultaCuentasContables.resx">
+      <DependentUpon>ConsultaCuentasContables.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Vistas\Formularios\IngresoAjustesManuales.resx">
+      <DependentUpon>IngresoAjustesManuales.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Vistas\Formularios\IngresoAjustesManualesResumenImportacion.resx">
+      <DependentUpon>IngresoAjustesManualesResumenImportacion.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Vistas\Formularios\IngresoSaldosContables.resx">
+      <DependentUpon>IngresoSaldosContables.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Vistas\Formularios\MantenedorAsociacionGruposConceptosCuentas.resx">
+      <DependentUpon>MantenedorAsociacionGruposConceptosCuentas.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Vistas\Formularios\MantenedorCompanias.resx">
+      <DependentUpon>MantenedorCompanias.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Vistas\Formularios\MantenedorConceptos.resx">
+      <DependentUpon>MantenedorConceptos.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Vistas\Formularios\MantenedorConsolidados.resx">
+      <DependentUpon>MantenedorConsolidados.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Vistas\Formularios\MantenedorGrupos.resx">
+      <DependentUpon>MantenedorGrupos.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Vistas\Formularios\MantenedorMaestroCuentasContables.resx">
+      <DependentUpon>MantenedorMaestroCuentasContables.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Vistas\Formularios\AcercaDe.resx">
+      <DependentUpon>AcercaDe.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Vistas\Formularios\MDI.resx">
+      <DependentUpon>MDI.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Vistas\Formularios\MenuReportes.resx">
+      <DependentUpon>MenuReportes.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Properties\Resources.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <LastGenOutput>Resources.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Vistas\Formularios\Splash.resx">
+      <DependentUpon>Splash.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Vistas\Reportes\ERF\EstadoResultado.resx">
+      <DependentUpon>EstadoResultado.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Vistas\Reportes\ESFSuperintendencia\EstadoSituacionSuper.resx">
+      <DependentUpon>EstadoSituacionSuper.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Vistas\Reportes\ESFSuperintendencia\rptEstadoSituacionSuper.rpt">
+      <Generator>CrystalDecisions.VSDesigner.CodeGen.ReportCodeGenerator</Generator>
+      <LastGenOutput>rptEstadoSituacionSuper.cs</LastGenOutput>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Vistas\Reportes\ESF\EstadoSituacion.resx">
+      <DependentUpon>EstadoSituacion.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Vistas\Reportes\ESF\rptEstadoSituacion.rpt">
+      <Generator>CrystalDecisions.VSDesigner.CodeGen.ReportCodeGenerator</Generator>
+      <LastGenOutput>rptEstadoSituacion.cs</LastGenOutput>
+    </EmbeddedResource>
+    <Compile Include="Properties\Resources.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Resources.resx</DependentUpon>
+      <DesignTime>True</DesignTime>
+    </Compile>
+    <None Include="Properties\Settings.settings">
+      <Generator>SettingsSingleFileGenerator</Generator>
+      <LastGenOutput>Settings.Designer.cs</LastGenOutput>
+    </None>
+    <Compile Include="Properties\Settings.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Settings.settings</DependentUpon>
+      <DesignTimeSharedInput>True</DesignTimeSharedInput>
+    </Compile>
+    <Compile Include="Vistas\Formularios\Splash.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Vistas\Formularios\Splash.Designer.cs">
+      <DependentUpon>Splash.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Settings.cs" />
+    <Compile Include="Vistas\Reportes\ERF\dtsEstadoResultado.cs">
+      <DependentUpon>dtsEstadoResultado.xsd</DependentUpon>
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Vistas\Reportes\ERF\dtsEstadoResultado.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>dtsEstadoResultado.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="Vistas\Reportes\ERF\EstadoResultado.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Vistas\Reportes\ERF\EstadoResultado.Designer.cs">
+      <DependentUpon>EstadoResultado.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Vistas\Reportes\ESFSuperintendencia\dtsEstadoSituacionSuper.cs">
+      <DependentUpon>dtsEstadoSituacionSuper.xsd</DependentUpon>
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Vistas\Reportes\ESFSuperintendencia\dtsEstadoSituacionSuper.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>dtsEstadoSituacionSuper.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="Vistas\Reportes\ESFSuperintendencia\EstadoSituacionSuper.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Vistas\Reportes\ESFSuperintendencia\EstadoSituacionSuper.Designer.cs">
+      <DependentUpon>EstadoSituacionSuper.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Vistas\Reportes\ESFSuperintendencia\rptEstadoSituacionSuper.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>rptEstadoSituacionSuper.rpt</DependentUpon>
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Vistas\Reportes\ESF\dtsEstadoSituacion.cs">
+      <DependentUpon>dtsEstadoSituacion.xsd</DependentUpon>
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Vistas\Reportes\ESF\dtsEstadoSituacion.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>dtsEstadoSituacion.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="Vistas\Reportes\ESF\EstadoSituacion.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Vistas\Reportes\ESF\EstadoSituacion.Designer.cs">
+      <DependentUpon>EstadoSituacion.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Vistas\Reportes\ESF\rptEstadoSituacion.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>rptEstadoSituacion.rpt</DependentUpon>
+      <SubType>Component</SubType>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\templates\importar.xlsx" />
+    <None Include="Resources\Botones\24\rsc-24-Buscar.png" />
+    <Content Include="Resources\AppNewConsolidado.ico" />
+    <Content Include="Resources\Botones\16\rsc-16-Agrupador.png" />
+    <Content Include="Resources\Botones\16\rsc-16-Bueno.png" />
+    <Content Include="Resources\Botones\16\rsc-16-Buscar.png" />
+    <Content Include="Resources\Botones\16\rsc-16-Consolidado.png" />
+    <Content Include="Resources\Botones\16\rsc-16-Consolidados.png" />
+    <Content Include="Resources\Botones\16\rsc-16-Download.png" />
+    <Content Include="Resources\Botones\16\rsc-16-Empresa.png" />
+    <Content Include="Resources\Botones\16\rsc-16-Lock.png" />
+    <Content Include="Resources\Botones\16\rsc-16-Malo.png" />
+    <Content Include="Resources\Botones\16\rsc_16_ClearLeft.png" />
+    <Content Include="Resources\Botones\16\rsc_16_ConsolidadoBook.png" />
+    <Content Include="Resources\Botones\16\rsc_16_Consolidado_pkg.png" />
+    <Content Include="Resources\Botones\16\rsc_16_Folder.png" />
+    <Content Include="Resources\Botones\16\rsc_16_refresh.png" />
+    <Content Include="Resources\Botones\16\rsc_16_Root.png" />
+    <Content Include="Resources\Botones\24\rsc-24-AjustesAutomaticos.png" />
+    <Content Include="Resources\Botones\24\rsc-24-Borrar.png" />
+    <Content Include="Resources\Botones\24\rsc-24-Cancelar.png" />
+    <Content Include="Resources\Botones\24\rsc-24-copiar.png" />
+    <Content Include="Resources\Botones\24\rsc-24-Cortar.png" />
+    <Content Include="Resources\Botones\24\rsc-24-Editar.png" />
+    <Content Include="Resources\Botones\24\rsc-24-exit.png" />
+    <Content Include="Resources\Botones\24\rsc-24-Grabar.png" />
+    <Content Include="Resources\Botones\24\rsc-24-MoverAbajo.png" />
+    <Content Include="Resources\Botones\24\rsc-24-MoverArriba.png" />
+    <Content Include="Resources\Botones\24\rsc-24-Nuevo.png" />
+    <Content Include="Resources\Botones\24\rsc-24-Pegar.png" />
+    <Content Include="Resources\Botones\24\rsc-24-Preferencias.png" />
+    <Content Include="Resources\Botones\24\rsc-24-Salir.png" />
+    <None Include="Resources\Botones\24\rsc-24-update.png" />
+    <Content Include="Resources\Botones\24\rsc_24_Carpetanueva.png" />
+    <Content Include="Resources\Botones\24\rsc_24_ConsolidadoBook.png" />
+    <Content Include="Resources\Botones\24\rsc_24_ConsolidadoNuevo.png" />
+    <Content Include="Resources\Botones\24\rsc_24_EmpresaNueva.png" />
+    <Content Include="Resources\Botones\24\rsc_24_Pegar.png" />
+    <Content Include="Resources\Botones\24\rsc_24_refresh.png" />
+    <Content Include="Resources\Imagenes\app.png" />
+    <Content Include="Resources\Imagenes\icafal.PNG" />
+    <Content Include="Resources\Imagenes\rsc-128-Consolidado01.png" />
+    <Content Include="Resources\rsc-32_Consolidado.ico" />
+    <Content Include="Resources\templates\configuracion-desa.xml" />
+    <Content Include="Resources\templates\configuracion.xml" />
+    <Content Include="Resources\zen-icon.ico" />
+    <Content Include="rsc-32_Consolidado.ico" />
+    <Content Include="zen-icon.ico" />
+    <None Include="Resources\Botones\24\rsc-24-Impresora.png" />
+    <None Include="app.config" />
+    <None Include="Resources\app.ico" />
+    <None Include="Vistas\Reportes\ERFSuperintendencia\dtsEstadoResultadoSuper.xsc">
+      <DependentUpon>dtsEstadoResultadoSuper.xsd</DependentUpon>
+    </None>
+    <None Include="Vistas\Reportes\ERFSuperintendencia\dtsEstadoResultadoSuper.xsd">
+      <SubType>Designer</SubType>
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>dtsEstadoResultadoSuper.Designer.cs</LastGenOutput>
+    </None>
+    <None Include="Vistas\Reportes\ERFSuperintendencia\dtsEstadoResultadoSuper.xss">
+      <DependentUpon>dtsEstadoResultadoSuper.xsd</DependentUpon>
+    </None>
+    <None Include="Vistas\Reportes\ERF\dtsEstadoResultado.xsc">
+      <DependentUpon>dtsEstadoResultado.xsd</DependentUpon>
+    </None>
+    <None Include="Vistas\Reportes\ERF\dtsEstadoResultado.xsd">
+      <SubType>Designer</SubType>
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>dtsEstadoResultado.Designer.cs</LastGenOutput>
+    </None>
+    <None Include="Vistas\Reportes\ERF\dtsEstadoResultado.xss">
+      <DependentUpon>dtsEstadoResultado.xsd</DependentUpon>
+    </None>
+    <None Include="Vistas\Reportes\ESFSuperintendencia\dtsEstadoSituacionSuper.xsc">
+      <DependentUpon>dtsEstadoSituacionSuper.xsd</DependentUpon>
+    </None>
+    <None Include="Vistas\Reportes\ESFSuperintendencia\dtsEstadoSituacionSuper.xsd">
+      <SubType>Designer</SubType>
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>dtsEstadoSituacionSuper.Designer.cs</LastGenOutput>
+    </None>
+    <None Include="Vistas\Reportes\ESFSuperintendencia\dtsEstadoSituacionSuper.xss">
+      <DependentUpon>dtsEstadoSituacionSuper.xsd</DependentUpon>
+    </None>
+    <None Include="Vistas\Reportes\ESF\dtsEstadoSituacion.xsc">
+      <DependentUpon>dtsEstadoSituacion.xsd</DependentUpon>
+    </None>
+    <None Include="Vistas\Reportes\ESF\dtsEstadoSituacion.xsd">
+      <SubType>Designer</SubType>
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>dtsEstadoSituacion.Designer.cs</LastGenOutput>
+    </None>
+    <None Include="Vistas\Reportes\ESF\dtsEstadoSituacion.xss">
+      <DependentUpon>dtsEstadoSituacion.xsd</DependentUpon>
+    </None>
+  </ItemGroup>
+  <ItemGroup>
+    <BootstrapperPackage Include="Microsoft.Net.Client.3.5">
+      <Visible>False</Visible>
+      <ProductName>.NET Framework Client Profile</ProductName>
+      <Install>false</Install>
+    </BootstrapperPackage>
+    <BootstrapperPackage Include="Microsoft.Net.Framework.2.0">
+      <Visible>False</Visible>
+      <ProductName>.NET Framework 2.0 %28x86%29</ProductName>
+      <Install>false</Install>
+    </BootstrapperPackage>
+    <BootstrapperPackage Include="Microsoft.Net.Framework.3.0">
+      <Visible>False</Visible>
+      <ProductName>.NET Framework 3.0 %28x86%29</ProductName>
+      <Install>false</Install>
+    </BootstrapperPackage>
+    <BootstrapperPackage Include="Microsoft.Net.Framework.3.5">
+      <Visible>False</Visible>
+      <ProductName>.NET Framework 3.5</ProductName>
+      <Install>true</Install>
+    </BootstrapperPackage>
+    <BootstrapperPackage Include="Microsoft.Net.Framework.3.5.SP1">
+      <Visible>False</Visible>
+      <ProductName>.NET Framework 3.5 SP1</ProductName>
+      <Install>false</Install>
+    </BootstrapperPackage>
+    <BootstrapperPackage Include="Microsoft.Windows.Installer.3.1">
+      <Visible>False</Visible>
+      <ProductName>Windows Installer 3.1</ProductName>
+      <Install>true</Install>
+    </BootstrapperPackage>
+  </ItemGroup>
+  <ItemGroup>
+    <WCFMetadata Include="Service References\" />
+  </ItemGroup>
+  <ItemGroup>
+    <Service Include="{3924545A-F8E2-475A-B1A4-05175BC41E50}" />
+    <Service Include="{967B4E0D-AD0C-4609-AB67-0FA40C0206D8}" />
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>
