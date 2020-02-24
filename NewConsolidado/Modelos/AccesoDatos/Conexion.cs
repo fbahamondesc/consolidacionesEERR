@@ -24,8 +24,9 @@ namespace NewConsolidado.Modelos.AccesoDatos
             {
                 connectionString = "data source = " + NewConsolidado.Properties.Settings.Default.strConnSource;
                 connectionString += "; initial catalog = " + NewConsolidado.Properties.Settings.Default.strConnCatalog;
-                connectionString += "; user id = " + NewConsolidado.Properties.Settings.Default.strConnUser;
-                connectionString += "; password = " + NewConsolidado.Properties.Settings.Default.strConnPassword;
+                //connectionString += "; user id = " + NewConsolidado.Properties.Settings.Default.strConnUser;
+                //connectionString += "; password = " + NewConsolidado.Properties.Settings.Default.strConnPassword;
+                connectionString += ";Integrated Security=SSPI";
             }
             //hLog.Debug("Conexion de datos : [" + connectionString + "]");
         }
